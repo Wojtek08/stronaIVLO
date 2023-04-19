@@ -1,0 +1,340 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(83, 1, 5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    max-width: 250px;
+    min-width: 190px;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+header section div:first-of-type {
+    display: inline-flex;
+    align-items: center;
+}
+
+header section div img {
+    width: 80px;
+}
+
+header section div h1 {
+    color: white;
+    font-size: 30px;
+}
+
+#about {
+    display: none;
+    cursor: pointer;
+}
+
+#media {
+    width: 60px;
+    position: absolute;
+    right: 10%;
+    z-index: -2;
+}
+
+#gazetka {
+    width: 60px;
+}
+
+main {
+    width: 80%;
+    max-width: 1470px;
+    overflow: auto;
+    margin: 90px auto;
+    position: relative;
+}
+
+#content-left-container {
+    width: 27%;
+    max-width: 490px;
+    box-sizing: border-box;
+    height: 500px;
+    position: fixed;
+    top: 155px;
+    overflow: scroll;
+    background-color: #e8e8e8;
+    box-shadow: 0px 0px 20px 1px #808080b4;
+    border-radius: 10px;
+}
+
+
+#content-left-container div {
+    width: 90%;
+    margin: 10px auto;
+    height: auto;
+    min-height: 200px;
+    background-color: white;
+    padding: 10px;
+}
+
+#content-left-container div h2 {
+    font-size: 20px;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+}
+
+#content-left-container div ul {
+    padding-left: 30px;
+}
+
+#content-left-container div iframe {
+    width: 100%;
+    height: 400px;
+}
+
+#content-left-container h1:first-of-type {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 40px;
+    font-family: Outfit;
+    font-weight: 500
+}
+
+.right-container {
+    width: 62%;
+    height: auto;
+    padding: 5px 0px;
+    margin: 65px 20px 20px auto;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px #808080b4;
+}
+
+.right-container h1 {
+    text-align: center;
+    color: inherit;
+    font-family: Rubik;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.right-container div {
+    width: 90%;
+    margin: 20px auto;
+    min-height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.right-container div:hover h1 {
+    height: 40px;
+    margin: 10px auto;
+}
+
+.right-container div:hover p {
+    height: 135px;
+}
+
+.right-container div:focus h1 {
+    height: 40px;
+    margin: 10px auto;
+}
+
+.right-container div:focus p {
+    height: 135px;
+}
+
+.right-container div img {
+    width: 250px;
+    height: 205px;
+}
+
+.right-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.right-container .main-paragraph {
+    padding: 20px;
+    color: #303030;
+    font-size: 17px;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+}
+
+.right-container .main-paragraph p {
+    padding-bottom: 20px;
+    font-family: Rubik, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: inherit;
+}
+
+.right-container div section h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    transition-property: height;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    text-align: center;
+    height: 150px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+
+.right-container div p {
+    margin-top: 10px;
+    overflow: scroll;
+    height: 30px;
+    transition: 0.2s height ease;
+}
+
+
+#gazetka-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-template-rows: repeat(2, 0.2fr 1fr 1fr); */
+    gap: 30px;
+    padding: 20px;
+}
+
+#gazetka-container img {
+    width: 100%;
+    height: max-content;
+}
+
+.right-container .gazetka-banner {
+    max-height: 50px;
+}
+
+.right-container .gazetka-banner h1 {
+    width: 100%;
+    font-size: 35px;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 5px
+}
+
+.right-container #gazetka-container a {
+    display: flex;
+    justify-content: center;
+}
+
+.right-container #gazetka-container div {
+    position: relative;
+    min-height: 0px;
+    margin-top: 15px;
+    background-color: #e8e8e8;
+}
+
+.right-container #gazetka-container div img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 0px;
+    margin: 0px;
+    transition: 0.2s ease transform;
+}
+
+
+.right-container #gazetka-container div:hover img {
+    transform: scale(1.1);
+}
+
+.right-container #gazetka-container div:active img {
+    transform: scale(0.9);
+}
+
+.right-container #gazetka-container div h2 {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    background-color: #a3be8c;
+    font-size: 20px;
+    margin: 0px;
+    transition: 0.2s ease transform;
+}
+
+.right-container #gazetka-container div:hover h2 {
+    transform: scale(0.9);
+}
+
+@media only screen and (max-width: 1000px) {
+    .right-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #about {
+        display: block;
+        width: 50px;
+        position: absolute;
+        left: 20px;
+        z-index: -2;
+    }
+    #media {
+        right: 20px;
+    }
+    main {
+        width: 100%;
+    }
+    main section {
+        margin: 20px;
+    }
+    #content-left-container {
+        width: 100%;
+        height: 0px;
+        max-width: 100%;
+        position: static;
+        margin: 45px auto;
+        transition: 0.3s ease height;
+    }
+    #content-left-container.open {
+        height: 820px;
+    }
+    #content-left-container h1, #content-left-container div {
+        opacity: 0;
+        transition: 0.3s ease opacity 0.2s;
+    }
+    #content-left-container.open h1, #content-left-container.open div {
+        opacity: 1;
+        transition: 0.3s ease opacity 0.18s;
+    }
+    .right-container {
+        margin: 40px auto;
+        width: 90%;
+        max-width: 100%;
+    }
+    .right-container div section {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .right-container div {
+        flex-direction: column;
+    }
+    .right-container div img {
+        margin: 0px auto;
+    }
+}
