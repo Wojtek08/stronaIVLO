@@ -278,6 +278,22 @@ main {
     transform: scale(0.9);
 }
 
+.right-container .media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0px auto;
+    max-width: 750px;
+    width: 100%;
+}
+
+.right-container .media a div {
+    background-color: #e8e8e8;
+}
+
+.right-container .media a div img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 1000px) {
     .right-container {
         width: 60%;
